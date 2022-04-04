@@ -5,14 +5,21 @@
         {
             "command": 
             {
-                "action": "copy",
-                "singleLine": false
+                "action": "newTab"
             },
-            "keys": "ctrl+c"
+            "keys": "ctrl+t"
         },
         {
             "command": "paste",
             "keys": "ctrl+v"
+        },
+        {
+            "command": 
+            {
+                "action": "copy",
+                "singleLine": false
+            },
+            "keys": "ctrl+c"
         },
         {
             "command": "find",
@@ -38,25 +45,47 @@
         "list": 
         [
             {
+                "acrylicOpacity": 0.80000000000000004,
+                "colorScheme": "Builtin Tango Dark",
                 "commandline": "powershell.exe",
+                "font": 
+                {
+                    "face": "DroidSansMono NF"
+                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell"
+                "name": "Windows PowerShell",
+                "useAcrylic": true
             },
             {
+                "acrylicOpacity": 0.80000000000000004,
+                "colorScheme": "Builtin Tango Dark",
                 "commandline": "cmd.exe",
+                "font": 
+                {
+                    "face": "DroidSansMono NF"
+                },
                 "guid": "{0caa0dad-35be-5f56-a8ff-afceeeaa6101}",
                 "hidden": false,
-                "name": "Command Prompt"
+                "name": "Command Prompt",
+                "useAcrylic": true
             },
             {
+                "acrylicOpacity": 0.80000000000000004,
+                "colorScheme": "Builtin Tango Dark",
+                "font": 
+                {
+                    "face": "DroidSansMono NF"
+                },
                 "guid": "{b453ae62-4e3d-5e58-b989-0a998ec441b8}",
                 "hidden": false,
                 "name": "Azure Cloud Shell",
-                "source": "Windows.Terminal.Azure"
+                "source": "Windows.Terminal.Azure",
+                "useAcrylic": true
             },
             {
-                "colorScheme": "darkmatrix",
+                "acrylicOpacity": 0.80000000000000004,
+                "colorScheme": "Tango Dark",
                 "font": 
                 {
                     "face": "DroidSansMono NF"
@@ -66,7 +95,8 @@
                 "name": "Ubuntu",
                 "padding": "10",
                 "source": "Windows.Terminal.Wsl",
-                "tabTitle": "Ubuntu"
+                "tabTitle": "Ubuntu",
+                "useAcrylic": true
             }
         ]
     },
