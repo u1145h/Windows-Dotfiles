@@ -11,16 +11,16 @@
             "keys": "ctrl+t"
         },
         {
-            "command": "paste",
-            "keys": "ctrl+v"
-        },
-        {
             "command": 
             {
                 "action": "copy",
                 "singleLine": false
             },
             "keys": "ctrl+c"
+        },
+        {
+            "command": "paste",
+            "keys": "ctrl+v"
         },
         {
             "command": "find",
@@ -39,42 +39,52 @@
     "copyFormatting": "none",
     "copyOnSelect": false,
     "defaultProfile": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
-    "initialCols": 130,
-    "initialRows": 40,
+    "initialCols": 120,
+    "initialRows": 35,
+    "newTabMenu": 
+    [
+        {
+            "type": "remainingProfiles"
+        }
+    ],
     "profiles": 
     {
-        "defaults": {},
+        "defaults": 
+        {
+            "colorScheme": "darkmatrix",
+            "font": 
+            {
+                "face": "DroidSansMono NF",
+                "size": 10.0
+            },
+            "opacity": 100,
+            "padding": "15",
+            "useAcrylic": true
+        },
         "list": 
         [
             {
-                "colorScheme": "darkmatrix",
-                "font": 
+                "colorScheme": 
                 {
-                    "face": "DroidSansMono NF",
-                    "size": 10.0
+                    "light": "Campbell"
                 },
+                "commandline": "\"C:\\Program Files\\PowerShell\\7-preview\\pwsh.exe\" -NoLogo",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
-                "opacity": 100,
-                "padding": "10",
                 "source": "Windows.Terminal.PowershellCore"
             },
             {
-                "colorScheme": "darkmatrix",
-                "font": 
+                "colorScheme": 
                 {
-                    "face": "DroidSansMono NF",
-                    "size": 10.0
+                    "light": "Tango Dark"
                 },
                 "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
                 "hidden": false,
+                "icon": "C:\\Users\\ullas\\OneDrive\\Documents\\icons\\ubuntu_terminal_icon.png",
                 "name": "Ubuntu",
-                "opacity": 100,
-                "padding": "10",
                 "source": "Windows.Terminal.Wsl",
-                "tabTitle": "Ubuntu",
-                "useAcrylic": true
+                "tabTitle": "Ubuntu"
             },
             {
                 "colorScheme": "darkmatrix",
@@ -104,22 +114,83 @@
                 "useAcrylic": true
             },
             {
-                "colorScheme": "darkmatrix",
-                "font": 
-                {
-                    "face": "DroidSansMono NF",
-                    "size": 10.0
-                },
                 "guid": "{61c54bbd-c2c6-5271-96e7-009a87ff44bf}",
                 "hidden": false,
-                "name": "Windows PowerShell",
-                "opacity": 100,
-                "useAcrylic": true
+                "name": "Windows PowerShell"
             }
         ]
     },
     "schemes": 
     [
+        {
+            "background": "#090300",
+            "black": "#090300",
+            "blue": "#01A0E4",
+            "brightBlack": "#5C5855",
+            "brightBlue": "#807D7C",
+            "brightCyan": "#CDAB53",
+            "brightGreen": "#3A3432",
+            "brightPurple": "#D6D5D4",
+            "brightRed": "#E8BBD0",
+            "brightWhite": "#F7F7F7",
+            "brightYellow": "#4A4543",
+            "cursorColor": "#A5A2A2",
+            "cyan": "#B5E4F4",
+            "foreground": "#A5A2A2",
+            "green": "#01A252",
+            "name": "3024 Night",
+            "purple": "#A16A94",
+            "red": "#DB2D20",
+            "selectionBackground": "#4A4543",
+            "white": "#A5A2A2",
+            "yellow": "#FDED02"
+        },
+        {
+            "background": "#111416",
+            "black": "#000000",
+            "blue": "#1093F5",
+            "brightBlack": "#404040",
+            "brightBlue": "#11B5F6",
+            "brightCyan": "#00FFFF",
+            "brightGreen": "#00FF00",
+            "brightPurple": "#FF00FF",
+            "brightRed": "#FF0000",
+            "brightWhite": "#FFFFFF",
+            "brightYellow": "#FFFF00",
+            "cursorColor": "#BBBBBB",
+            "cyan": "#00CDCD",
+            "foreground": "#EEEEEC",
+            "green": "#00CD00",
+            "name": "Abernathy",
+            "purple": "#CD00CD",
+            "red": "#CD0000",
+            "selectionBackground": "#EEEEEC",
+            "white": "#FAEBD7",
+            "yellow": "#CDCD00"
+        },
+        {
+            "background": "#040404",
+            "black": "#040404",
+            "blue": "#417AB3",
+            "brightBlack": "#685656",
+            "brightBlue": "#97D7EF",
+            "brightCyan": "#BDCFE5",
+            "brightGreen": "#99B52C",
+            "brightPurple": "#AA7900",
+            "brightRed": "#D76B42",
+            "brightWhite": "#E4D5C7",
+            "brightYellow": "#FFB670",
+            "cursorColor": "#FEFFFF",
+            "cyan": "#BDCFE5",
+            "foreground": "#FEFFFF",
+            "green": "#5DA602",
+            "name": "Adventure",
+            "purple": "#E5C499",
+            "red": "#D84A33",
+            "selectionBackground": "#606060",
+            "white": "#DBDED8",
+            "yellow": "#EEBB6E"
+        },
         {
             "background": "#0C0C0C",
             "black": "#0C0C0C",
@@ -352,23 +423,23 @@
         },
         {
             "background": "#000000",
-            "black": "#012514",
+            "black": "#525252",
             "blue": "#006536",
             "brightBlack": "#333333",
             "brightBlue": "#46D8B8",
             "brightCyan": "#12545A",
             "brightGreen": "#90D762",
             "brightPurple": "#AA77C8",
-            "brightRed": "#00733D",
+            "brightRed": "#F57421",
             "brightWhite": "#006536",
             "brightYellow": "#E2E500",
             "cursorColor": "#9FA86E",
             "cyan": "#114D53",
-            "foreground": "#93CE33",
+            "foreground": "#FFFFFF",
             "green": "#6FA64C",
             "name": "darkmatrix",
             "purple": "#452D53",
-            "red": "#006536",
+            "red": "#FF5C5C",
             "selectionBackground": "#0F191C",
             "white": "#39CC88",
             "yellow": "#7E8000"
